@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-sequence-price
+      author: Ilya Khoroshiy
+      changes:
+        - createSequence:
+            sequenceName: sequenceprice
+            cacheSize: 1
+            cycle: false
+            incrementBy: 1
+            dataType: bigint
+            startValue: 1
+            minValue: 1
+            maxValue: 9223372036854775800
+            schemaName: example
+            catalogName: sequences

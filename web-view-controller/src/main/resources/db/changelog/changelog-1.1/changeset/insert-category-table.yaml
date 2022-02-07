@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-category-1
+      author: Ilya Khoroshiy
+      changes:
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: Молочные продукты, сыр, яйца
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: Мясо, птица, колбасы
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: Рыба, игра, морепродукты
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: Овощи, фрукты, зелень
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: Хлеб, выпечка, сладости

@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-store_has_pricelist
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: store_has_pricelist
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequencestorehaspricelist
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: store_has_pricelist_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: store_id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: product_id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: current_price
+                  type: number
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: store_id
+            baseTableName: store_has_pricelist
+            referencedColumnNames: id
+            referencedTableName: store
+            referencedTableSchemaName: example
+            constraintName: store_id_fk
+        - addForeignKeyConstraint:
+            baseColumnNames: product_id
+            baseTableName: store_has_pricelist
+            referencedColumnNames: id
+            referencedTableName: product
+            referencedTableSchemaName: example
+            constraintName: product_id_fk

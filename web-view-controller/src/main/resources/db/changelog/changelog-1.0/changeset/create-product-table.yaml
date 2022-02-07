@@ -1,0 +1,52 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-price
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: product
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequenceproduct
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: product_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: brand
+                  type: varchar(255)
+              - column:
+                  name: manufacturer
+                  type: varchar(255)
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: unit
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: subcategory_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: subcategory_id
+            baseTableName: product
+            referencedColumnNames: id
+            referencedTableName: subcategory
+            referencedTableSchemaName: example
+            constraintName: product_subcategory_fk

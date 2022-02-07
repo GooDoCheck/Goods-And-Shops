@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-price
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: price
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequenceprice
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: price_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: price
+                  type: number
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price_list_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date
+                  type: date
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: price_list_id
+            baseTableName: price
+            referencedColumnNames: id
+            referencedTableName: store_has_pricelist
+            referencedTableSchemaName: example
+            constraintName: price_store_has_pricelist_fk

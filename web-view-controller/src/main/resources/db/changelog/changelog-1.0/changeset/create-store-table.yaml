@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-store
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: store
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequencestore
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: store_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: city
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: address
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: working_hours
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: website
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

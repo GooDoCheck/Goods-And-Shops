@@ -1,0 +1,89 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users-1
+      author: Ilya Khoroshiy
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: Vasya
+              - column:
+                  name: surname
+                  value: Ivanov
+              - column:
+                  name: address
+                  value: Tulskaya obl., Tula, ul.Lenina 5-11
+              - column:
+                  name: email
+                  value: ivanov@mail.com
+              - column:
+                  name: username
+                  value: VasyaIvanov
+              - column:
+                  name: password
+                  value: $2a$10$Qc3pv4nHKg3MEyjmpDBRr.UEiKCxdONc2PvRVeaVoGbY9Cy6e4D/e
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: Ilya
+              - column:
+                  name: surname
+                  value: Petrov
+              - column:
+                  name: address
+                  value: Tulskaya obl., Tula, ul.Lenina 9-13
+              - column:
+                  name: email
+                  value: petrov@mail.com
+              - column:
+                  name: username
+                  value: IlyaPetrov
+              - column:
+                  name: password
+                  value: $2a$10$DhOPVk1qFL9XaCPGYrgw/.OvVl/HnL1eOH24G661sfdJN.CdhUieO
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: Aleksandr
+              - column:
+                  name: surname
+                  value: Evgeniev
+              - column:
+                  name: address
+                  value: Tulskaya obl., Tula, ul.Lenina 23-123
+              - column:
+                  name: email
+                  value: evgeniev@mail.com
+              - column:
+                  name: username
+                  value: AleksandrEvgeniev
+              - column:
+                  name: password
+                  value: $2a$10$ZW2GKbdtJLcFrtnPI1xO9.H7dsWUM20xFmE9g4A7MKi36T3fWwN4O
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: Natalia
+              - column:
+                  name: surname
+                  value: Verova
+              - column:
+                  name: address
+                  value: Tulskaya obl., Tula, ul.Lenina 26-32
+              - column:
+                  name: email
+                  value: verova@mail.com
+              - column:
+                  name: username
+                  value: NataliaVerova
+              - column:
+                  name: password
+                  value: $2a$10$22mFwj2qz/DgD2Lr8pxrf.GAh75tFHmmf.3lwmrQuI3zLFduMBnKi

@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-category
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: category
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequencecategory
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: category_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+                    unique: true

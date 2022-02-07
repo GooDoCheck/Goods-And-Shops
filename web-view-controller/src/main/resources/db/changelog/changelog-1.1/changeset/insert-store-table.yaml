@@ -1,0 +1,89 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-store-1
+      author: Ilya Khoroshiy
+      changes:
+        - insert:
+            tableName: store
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: Глобус
+              - column:
+                  name: city
+                  value: Тула
+              - column:
+                  name: address
+                  value: Тульская обл., Ленинский р-н, с/п Ильинское, с. Осиновая гора, ул. Аркадия Шипунова, мкрн Левобережный, д. 1А
+              - column:
+                  name: working_hours
+                  value: Пн-Вс, круглосуточно
+              - column:
+                  name: website
+                  value: www.globus.ru
+        - insert:
+            tableName: store
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: Глобус
+              - column:
+                  name: city
+                  value: Калуга
+              - column:
+                  name: address
+                  value: Калужская обл., г. Калуга, ул. Генерала Попова, зд. 1А
+              - column:
+                  name: working_hours
+                  value: Пн-Вс, круглосуточно
+              - column:
+                  name: website
+                  value: www.globus.ru
+        - insert:
+            tableName: store
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: Пятерочка
+              - column:
+                  name: city
+                  value: Тула
+              - column:
+                  name: address
+                  value: г.Тула, пр-кт Ленина, 129
+              - column:
+                  name: working_hours
+                  value: Пн-Вс, c 8:00 до 23:00
+              - column:
+                  name: website
+                  value: www.5ka.ru
+        - insert:
+            tableName: store
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: Пятерочка
+              - column:
+                  name: city
+                  value: Калуга
+              - column:
+                  name: address
+                  value: г.Калуга, ул. Ленина, 81
+              - column:
+                  name: working_hours
+                  value: Пн-Вс, c 8:00 до 23:00
+              - column:
+                  name: website
+                  value: www.5ka.ru

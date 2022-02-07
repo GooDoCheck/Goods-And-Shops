@@ -1,0 +1,575 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-product-1
+      author: Ilya Khoroshiy
+      changes:
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: Молоко Тульское Тульский молочный комбинат пастеризованное 3,2%
+              - column:
+                  name: brand
+                  value: Тульский молочный комбинат
+              - column:
+                  name: manufacturer
+                  value: АО "Тульский молочный комбинат"
+              - column:
+                  name: quantity
+                  valueNumeric: 900
+              - column:
+                  name: unit
+                  value: MILLILITER
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 1
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: Кефир Домик в деревне на живой закваске 1%
+              - column:
+                  name: brand
+                  value: Домик в деревне
+              - column:
+                  name: manufacturer
+                  value: ОАО "Вимм-Билль-Данн"
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: LITRE
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 2
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: Йогурт Царка с наполнителем Вишня 3,5%
+              - column:
+                  name: brand
+                  value: Царка
+              - column:
+                  name: manufacturer
+                  value: ОАО "Судогодский молочный завод"
+              - column:
+                  name: quantity
+                  valueNumeric: 400
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 3
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: Йогурт Царка с наполнителем Вишня 3,5%
+              - column:
+                  name: brand
+                  value: Царка
+              - column:
+                  name: manufacturer
+                  value: ОАО "Судогодский молочный завод"
+              - column:
+                  name: quantity
+                  valueNumeric: 400
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 3
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: Мороженое Эkzo Арбуз, дыня
+              - column:
+                  name: brand
+                  value: Эkzo
+              - column:
+                  name: manufacturer
+                  value: ООО "Юнилевер Русь"
+              - column:
+                  name: quantity
+                  valueNumeric: 520
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 4
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: name
+                  value: Яйцо куриное пищевое Окское первой категории C1
+              - column:
+                  name: brand
+                  value: Окское
+              - column:
+                  name: manufacturer
+                  value: ЗАО "Окская птицефабрика"
+              - column:
+                  name: quantity
+                  valueNumeric: 10
+              - column:
+                  name: unit
+                  value: PIECE
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 5
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: name
+                  value: Бекон из свинины Мираторг Любительский
+              - column:
+                  name: brand
+                  value: Мираторг
+              - column:
+                  name: manufacturer
+                  value: ЗАО "СК Короча"
+              - column:
+                  name: quantity
+                  valueNumeric: 260
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 6
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: name
+                  value: Ветчина варёная из свинины Папа может!
+              - column:
+                  name: brand
+                  value: Папа может!
+              - column:
+                  name: manufacturer
+                  value: АО "ОМПК"
+              - column:
+                  name: quantity
+                  valueNumeric: 400
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 7
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: name
+                  value: Бедро цыплят-бройлеров охлаждённое Петелинка Особое
+              - column:
+                  name: brand
+                  value: Петелинка
+              - column:
+                  name: manufacturer
+                  value: ЗАО "Петелинская птицефабрика"
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 8
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: name
+                  value: Бедро цыплят-бройлеров охлаждённое Петелинка Особое
+              - column:
+                  name: brand
+                  value: Петелинка
+              - column:
+                  name: manufacturer
+                  value: ЗАО "Петелинская птицефабрика"
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 8
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: name
+                  value: Рёбрышки свиные охлаждённые Мираторг Деликатесные
+              - column:
+                  name: brand
+                  value: Мираторг
+              - column:
+                  name: manufacturer
+                  value: ЗАО "СК Короча"
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 9
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: name
+                  value: Колбаса вялено-копчёная постная Краснодарская
+              - column:
+                  name: brand
+                  value: Краснодарская
+              - column:
+                  name: manufacturer
+                  value: ООО "Высший вкус"
+              - column:
+                  name: quantity
+                  valueNumeric: 250
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 10
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: name
+                  value: Сельдь Меридиан филе в винной заливке
+              - column:
+                  name: brand
+                  value: Меридиан
+              - column:
+                  name: manufacturer
+                  value: ОАО ПКП "Меридиан"
+              - column:
+                  name: quantity
+                  valueNumeric: 200
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 11
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: name
+                  value: Креветки королевские варёно-мороженые Vici Приорити в панцире с головой 30/40
+              - column:
+                  name: brand
+                  value: Vici
+              - column:
+                  name: manufacturer
+                  value: ООО "Вичюнай-Русь"
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 12
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: name
+                  value: Икра лососёвая красная зернистая Путина
+              - column:
+                  name: brand
+                  value: Путина
+              - column:
+                  name: manufacturer
+                  value: ООО "ПУТИНА"
+              - column:
+                  name: quantity
+                  valueNumeric: 440
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 13
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: name
+                  value: Банан
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 14
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: name
+                  value: Огурцы длинноплодные
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 15
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: name
+                  value: Томаты розовые
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 15
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: name
+                  value: Кинза
+              - column:
+                  name: quantity
+                  valueNumeric: 100
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 16
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 20
+              - column:
+                  name: name
+                  value: Грибы шампиньоны свежие
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: unit
+                  value: KILOGRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 17
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 21
+              - column:
+                  name: name
+                  value: Хлебцы вафельные пшеничные Виктория
+              - column:
+                  name: brand
+                  value: Виктория
+              - column:
+                  name: manufacturer
+                  value: ООО "Русский продукт"
+              - column:
+                  name: quantity
+                  valueNumeric: 60
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 18
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 22
+              - column:
+                  name: name
+                  value: Торт Наполеон У Палыча оригинальный
+              - column:
+                  name: brand
+                  value: У Палыча
+              - column:
+                  name: manufacturer
+                  value: ООО «Эко-меню»
+              - column:
+                  name: quantity
+                  valueNumeric: 1100
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 19
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 23
+              - column:
+                  name: name
+                  value: Тесто бездрожжевое Черёмушки слоёное
+              - column:
+                  name: brand
+                  value: Черёмушки
+              - column:
+                  name: manufacturer
+                  value: АО "КБК "Черёмушки"
+              - column:
+                  name: quantity
+                  valueNumeric: 500
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 20
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 24
+              - column:
+                  name: name
+                  value: Лаваш армянский Калужский хлебокомбинат
+              - column:
+                  name: brand
+                  value: Калужский хлебокомбинат
+              - column:
+                  name: manufacturer
+                  value: ООО "Московская пищевая фабрика"
+              - column:
+                  name: quantity
+                  valueNumeric: 340
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 21
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 25
+              - column:
+                  name: name
+                  value: Пряник тульский Медовые традиции сувенирный с фруктовой начинкой
+              - column:
+                  name: brand
+                  value: Медовые традиции
+              - column:
+                  name: manufacturer
+                  value: ООО "Медовые традиции"
+              - column:
+                  name: quantity
+                  valueNumeric: 350
+              - column:
+                  name: unit
+                  value: GRAM
+              - column:
+                  name: subcategory_id
+                  valueNumeric: 22

@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-subcategory
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: subcategory
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequencesubcategory
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: subcategory_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: category_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: category_id
+            baseTableName: subcategory
+            referencedColumnNames: id
+            referencedTableName: category
+            referencedTableSchemaName: example
+            constraintName: subcategory_category_fk

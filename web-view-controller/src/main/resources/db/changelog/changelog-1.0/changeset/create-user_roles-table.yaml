@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-user_roles
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: user_roles
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: role_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: user_roles
+            referencedColumnNames: id
+            referencedTableName: users
+            referencedTableSchemaName: example
+            constraintName: user_roles_user_fk
+        - addForeignKeyConstraint:
+            baseColumnNames: role_id
+            baseTableName: user_roles
+            referencedColumnNames: id
+            referencedTableName: roles
+            referencedTableSchemaName: example
+            constraintName: user_roles_roles_fk

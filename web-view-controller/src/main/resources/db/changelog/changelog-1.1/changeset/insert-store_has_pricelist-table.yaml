@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-store_has_pricelist-1
+      author: Ilya Khoroshiy
+      changes:
+        - insert:
+            tableName: store_has_pricelist
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: store_id
+                  valueNumeric: 1
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: current_price
+                  valueNumeric: 85.50
+        - insert:
+            tableName: store_has_pricelist
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: store_id
+                  valueNumeric: 2
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: current_price
+                  valueNumeric: 85.50
+        - insert:
+            tableName: store_has_pricelist
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: store_id
+                  valueNumeric: 3
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: current_price
+                  valueNumeric: 80.50
+        - insert:
+            tableName: store_has_pricelist
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: store_id
+                  valueNumeric: 4
+              - column:
+                  name: product_id
+                  valueNumeric: 1
+              - column:
+                  name: current_price
+                  valueNumeric: 80.50

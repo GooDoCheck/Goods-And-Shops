@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-roles
+      author: Ilya Khoroshiy
+      changes:
+        - createTable:
+            tableName: roles
+            schemaName: example
+            catalogName: tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: sequenceroles
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: roles_pk
+                    nullable: false
+                    unique: true
+              - column:
+                  name: name
+                  type: varchar(25)
+                  constraints:
+                    nullable: false

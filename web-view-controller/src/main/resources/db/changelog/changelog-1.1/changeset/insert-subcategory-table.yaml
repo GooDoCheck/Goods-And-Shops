@@ -1,0 +1,269 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-subcategory-1
+      author: Ilya Khoroshiy
+      changes:
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: Молоко, молочные продукты
+              - column:
+                  name: category_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: Кисломолочные продукты, творог
+              - column:
+                  name: category_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: Йогурты, творожки, десерты
+              - column:
+                  name: category_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: Мороженое
+              - column:
+                  name: category_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: Яйца
+              - column:
+                  name: category_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: name
+                  value: Мясо
+              - column:
+                  name: category_id
+                  valueNumeric: 2
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: name
+                  value: Мясная гастрономия
+              - column:
+                  name: category_id
+                  valueNumeric: 2
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: name
+                  value: Птица
+              - column:
+                  name: category_id
+                  valueNumeric: 2
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: name
+                  value: Шашлык, гриль из мяса, птицы
+              - column:
+                  name: category_id
+                  valueNumeric: 2
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: name
+                  value: Растительное мясо и гастрономия
+              - column:
+                  name: category_id
+                  valueNumeric: 2
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: name
+                  value: Рыба
+              - column:
+                  name: category_id
+                  valueNumeric: 3
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: name
+                  value: Морепродукты
+              - column:
+                  name: category_id
+                  valueNumeric: 3
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: name
+                  value: Икра и деликатесы
+              - column:
+                  name: category_id
+                  valueNumeric: 3
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: name
+                  value: Фрукты и ягоды
+              - column:
+                  name: category_id
+                  valueNumeric: 4
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: name
+                  value: Овощи
+              - column:
+                  name: category_id
+                  valueNumeric: 4
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: name
+                  value: Зелень и салаты
+              - column:
+                  name: category_id
+                  valueNumeric: 4
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: name
+                  value: Грибы и соленья
+              - column:
+                  name: category_id
+                  valueNumeric: 4
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: name
+                  value: Хлебные изделия
+              - column:
+                  name: category_id
+                  valueNumeric: 5
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: name
+                  value: Торты, пирожные, кексы
+              - column:
+                  name: category_id
+                  valueNumeric: 5
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 20
+              - column:
+                  name: name
+                  value: Замороженные торты, выпечка, тесто
+              - column:
+                  name: category_id
+                  valueNumeric: 5
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 21
+              - column:
+                  name: name
+                  value: Хлеб, лаваш, лепёшки
+              - column:
+                  name: category_id
+                  valueNumeric: 5
+        - insert:
+            tableName: subcategory
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 22
+              - column:
+                  name: name
+                  value: Печенье, пряники, вафли
+              - column:
+                  name: category_id
+                  valueNumeric: 5
